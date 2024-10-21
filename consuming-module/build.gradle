@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'org.cyclonedx.bom' version '1.7.4' // CycloneDX SBOM plugin
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform(project(":dependency-constraints"))
+
+    implementation "org.hsqldb:hsqldb"  // Version constrained by dependency-constraints
+    implementation "com.google.guava:guava"
+    implementation "org.apache.commons:commons-lang3"
+}
+

@@ -1,0 +1,3 @@
+rootProject.name = 'sample-project'
+include ':dependency-constraints'
+include ':consuming-module'
